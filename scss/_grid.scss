@@ -1,0 +1,30 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+  > * {
+    max-width: 100%;
+  }
+
+  .col {
+    flex: 1;
+  }
+
+  @for $i from 1 through 24 {
+    .col-#{$i} {
+      flex: 0 0 auto;
+      width: calc(#{$i} / 24 * 100%);
+    }
+  }
+
+  @each $breakpoint, $value in $breakpoints {
+    @media (min-width: $value) {
+      @for $i from 1 through 24 {
+        .col-#{$breakpoint}-#{$i} {
+          flex: 0 0 auto;
+          width: calc(#{$i} / 24 * 100%);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.alert {
+  padding: $alert-padding-y $alert-padding-x;
+  border-radius: $alert-border-radius;
+
+  .alert-title {
+    margin-bottom: $alert-title-margin-bottom;
+    font-size: $alert-title-font-size;
+    font-weight: $alert-title-font-weight;
+  }
+
+  &:has(.alert-title) {
+    padding: $alert-padding-with-title;
+  }
+
+  @each $color, $value in $alert-variants {
+    &.alert-#{$color} {
+      background-color: rgba($value, 0.3);
+      color: $value;
+      border: 1px solid $value;
+    }
+  }
+}

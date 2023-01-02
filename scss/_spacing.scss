@@ -1,0 +1,94 @@
+@for $i from 0 through 6 {
+  // margin
+  .m-#{$i} {
+    margin: calc(#{$unit} * #{$i});
+  }
+
+  .mx-#{$i} {
+    margin-left: calc(#{$unit} * #{$i});
+    margin-right: calc(#{$unit} * #{$i});
+  }
+
+  .my-#{$i} {
+    margin-top: calc(#{$unit} * #{$i});
+    margin-bottom: calc(#{$unit} * #{$i});
+  }
+
+  .ml-#{$i} {
+    margin-left: calc(#{$unit} * #{$i});
+  }
+
+  .mr-#{$i} {
+    margin-right: calc(#{$unit} * #{$i});
+  }
+
+  .mt-#{$i} {
+    margin-top: calc(#{$unit} * #{$i});
+  }
+
+  .mb-#{$i} {
+    margin-bottom: calc(#{$unit} * #{$i});
+  }
+
+  // negative margin
+  .m-n#{$i} {
+    margin: calc(-#{$unit} * #{$i});
+  }
+
+  .mx-n#{$i} {
+    margin-left: calc(-#{$unit} * #{$i});
+    margin-right: calc(-#{$unit} * #{$i});
+  }
+
+  .my-n#{$i} {
+    margin-top: calc(-#{$unit} * #{$i});
+    margin-bottom: calc(-#{$unit} * #{$i});
+  }
+
+  .ml-n#{$i} {
+    margin-left: calc(-#{$unit} * #{$i});
+  }
+
+  .mr-n#{$i} {
+    margin-right: calc(-#{$unit} * #{$i});
+  }
+
+  .mt-n#{$i} {
+    margin-top: calc(-#{$unit} * #{$i});
+  }
+
+  .mb-n#{$i} {
+    margin-bottom: calc(-#{$unit} * #{$i});
+  }
+
+  // padding
+  .p-#{$i} {
+    padding: calc(#{$unit} * #{$i});
+  }
+
+  .px-#{$i} {
+    padding-left: calc(#{$unit} * #{$i});
+    padding-right: calc(#{$unit} * #{$i});
+  }
+
+  .py-#{$i} {
+    padding-top: calc(#{$unit} * #{$i});
+    padding-bottom: calc(#{$unit} * #{$i});
+  }
+
+  .pl-#{$i} {
+    padding-left: calc(#{$unit} * #{$i});
+  }
+
+  .pr-#{$i} {
+    padding-right: calc(#{$unit} * #{$i});
+  }
+
+  .pt-#{$i} {
+    padding-top: calc(#{$unit} * #{$i});
+  }
+
+  .pb-#{$i} {
+    padding-bottom: calc(#{$unit} * #{$i});
+  }
+}

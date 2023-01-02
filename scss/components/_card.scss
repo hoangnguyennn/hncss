@@ -1,0 +1,38 @@
+.card {
+  padding: $card-padding;
+  border: 1px solid $card-border-color;
+  border-radius: $card-border-radius;
+
+  &.no-border {
+    border: none;
+    box-shadow: 0 3px 6px 0 rgba($dark, 0.1), 0 5px 12px 4px rgba($dark, 0.05);
+
+    .card-title {
+      border: none;
+    }
+
+    .card-thumb {
+      border-radius: $card-border-radius;
+    }
+  }
+
+  &:has(.card-title),
+  &:has(.card-content) {
+    padding: 0;
+  }
+
+  .card-title {
+    padding: $card-padding;
+    font-size: $card-title-font-size;
+    border-bottom: 1px solid $card-border-color;
+  }
+
+  .card-thumb {
+    border-radius: $card-border-radius;
+    overflow: hidden;
+  }
+
+  .card-content {
+    padding: $card-padding;
+  }
+}

@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  color: $primary-text-color;
+  font-family: $primary-font-family;
+  font-size: $primary-font-size;
+}
+
+a {
+  color: $primary;
+}
+
+button {
+  font-size: $primary-font-size;
+  cursor: pointer;
+}

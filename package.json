@@ -1,0 +1,16 @@
+{
+  "name": "hncss",
+  "version": "1.0.0",
+  "author": "hoangnguyen <nvanhoang188@gmail.com>",
+  "description": "hn's CSS kit",
+  "license": "MIT",
+  "scripts": {
+    "watch": "node-sass -w scss/ -o css/ --output-style expanded"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "node-sass": "8.0.0",
+    "sass": "1.57.1"
+  }
+}
+

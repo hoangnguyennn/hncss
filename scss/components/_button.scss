@@ -1,0 +1,78 @@
+.btn {
+  display: inline-block;
+  padding: $btn-padding-y $btn-padding-x;
+  background-color: $white;
+  border: 1px solid $dark;
+  border-radius: $btn-border-radius;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border 0.15s ease-in-out;
+
+  @each $color, $value in $btn-variants {
+    &.btn-#{$color} {
+      background-color: $value;
+      color: $white;
+      border-color: $value;
+
+      @if $color == 'disabled' {
+        outline: none;
+        cursor: not-allowed;
+      } @else {
+        &:focus {
+          outline: 4px solid rgba($value, 0.5);
+        }
+
+        &:hover {
+          background-color: rgba($value, 0.75);
+        }
+      }
+
+      &.btn-outline {
+        background-color: $white;
+        color: $value;
+        border-color: $value;
+
+        @if $color == 'disabled' {
+          outline: none;
+          cursor: not-allowed;
+        } @else {
+          &:focus {
+            outline: 4px solid rgba($value, 0.5);
+          }
+
+          &:hover {
+            background-color: $value;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  &.btn-link {
+    background-color: $white;
+    color: $primary;
+    border-color: $white;
+
+    &:focus {
+      outline: 4px solid rgba($primary, 0.5);
+    }
+
+    &.btn-outline {
+      background-color: $white;
+      color: $primary;
+      border-color: $primary;
+
+      &:focus {
+        outline: 4px solid rgba($primary, 0.5);
+      }
+    }
+  }
+
+  &.btn-rounded {
+    border-radius: 9999px;
+  }
+
+  &.btn-square {
+    border-radius: 0;
+  }
+}
