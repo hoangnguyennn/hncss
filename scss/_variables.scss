@@ -22,7 +22,7 @@ $colors: (
   'white': $white,
   'dark': $dark,
   'light': $light,
-  'gray': $gray
+  'gray': $gray,
 );
 
 // state colors
@@ -39,14 +39,14 @@ $state-colors: (
   'success': $success,
   'warning': $warning,
   'danger': $danger,
-  'disabled': $disabled
+  'disabled': $disabled,
 );
 
 // alignment
 $alignments: (
   'left': left,
   'right': right,
-  'center': center
+  'center': center,
 );
 
 // breakpoints
@@ -60,7 +60,7 @@ $breakpoints: (
   'sm': $sm,
   'md': $md,
   'lg': $lg,
-  'xl': $xl
+  'xl': $xl,
 );
 
 // text
@@ -95,7 +95,7 @@ $alert-variants: (
   'success': $green,
   'warning': $yellow,
   'danger': $red,
-  'disabled': $gray
+  'disabled': $gray,
 );
 
 // button
@@ -110,7 +110,7 @@ $btn-variants: (
   'success': $green,
   'warning': $yellow,
   'danger': $red,
-  'disabled': $gray
+  'disabled': $gray,
 );
 
 // card
@@ -119,11 +119,27 @@ $card-border-color: $light;
 $card-border-radius: $border-radius-large;
 $card-title-font-size: $title-font-size;
 
+// tag
+$tag-padding-x: 0.25rem;
+$tag-padding-y: 0.25rem;
+$tag-font-size: 0.75rem;
+$tag-border: $light;
+$tag-border-radius: $border-radius;
+
+$tag-variants: (
+  'primary': $blue,
+  'secondary': $red,
+  'success': $green,
+  'warning': $yellow,
+  'danger': $red,
+  'disabled': $gray,
+);
+
 // display, add more values later
 $displays: (
   'block': block,
   'inline': inline,
   'inline-block': inline-block,
   'flex': flex,
-  'inline-flex': inline-flex
+  'inline-flex': inline-flex,
 );

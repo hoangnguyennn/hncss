@@ -1,0 +1,48 @@
+.tag {
+  display: inline-block;
+  padding: $tag-padding-y $tag-padding-x;
+  background-color: $white;
+  font-size: $tag-font-size;
+  border: 1px solid $tag-border;
+  border-radius: $tag-border-radius;
+
+  @each $tag, $value in $tag-variants {
+    &.tag-#{$tag} {
+      background-color: rgba($value, 0.2);
+      color: $value;
+      border-color: $value;
+
+      &.tag-fill {
+        background-color: $value;
+        color: $white;
+        border-color: $value;
+      }
+    }
+  }
+
+  @each $tag, $value in $colors {
+    @if $tag == 'light' {
+      &.tag-#{$tag} {
+        background-color: rgba($value, 0.2);
+        color: $dark;
+        border-color: $value;
+      }
+    } @else if $tag != 'white' {
+      &.tag-#{$tag} {
+        background-color: rgba($value, 0.2);
+        color: $value;
+        border-color: $value;
+
+        &.tag-fill {
+          background-color: $value;
+          color: $white;
+          border-color: $value;
+        }
+      }
+    }
+  }
+
+  &.tag-rounded {
+    border-radius: 9999px;
+  }
+}
