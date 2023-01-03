@@ -1,94 +1,94 @@
 @for $i from 0 through 6 {
   // margin
   .m-#{$i} {
-    margin: calc(#{$unit} * #{$i});
+    margin: calc(#{$unit} * #{$i}) !important;
   }
 
   .mx-#{$i} {
-    margin-left: calc(#{$unit} * #{$i});
-    margin-right: calc(#{$unit} * #{$i});
+    margin-left: calc(#{$unit} * #{$i}) !important;
+    margin-right: calc(#{$unit} * #{$i}) !important;
   }
 
   .my-#{$i} {
-    margin-top: calc(#{$unit} * #{$i});
-    margin-bottom: calc(#{$unit} * #{$i});
+    margin-top: calc(#{$unit} * #{$i}) !important;
+    margin-bottom: calc(#{$unit} * #{$i}) !important;
   }
 
   .ml-#{$i} {
-    margin-left: calc(#{$unit} * #{$i});
+    margin-left: calc(#{$unit} * #{$i}) !important;
   }
 
   .mr-#{$i} {
-    margin-right: calc(#{$unit} * #{$i});
+    margin-right: calc(#{$unit} * #{$i}) !important;
   }
 
   .mt-#{$i} {
-    margin-top: calc(#{$unit} * #{$i});
+    margin-top: calc(#{$unit} * #{$i}) !important;
   }
 
   .mb-#{$i} {
-    margin-bottom: calc(#{$unit} * #{$i});
+    margin-bottom: calc(#{$unit} * #{$i}) !important;
   }
 
   // negative margin
   .m-n#{$i} {
-    margin: calc(-#{$unit} * #{$i});
+    margin: calc(-#{$unit} * #{$i}) !important;
   }
 
   .mx-n#{$i} {
-    margin-left: calc(-#{$unit} * #{$i});
-    margin-right: calc(-#{$unit} * #{$i});
+    margin-left: calc(-#{$unit} * #{$i}) !important;
+    margin-right: calc(-#{$unit} * #{$i}) !important;
   }
 
   .my-n#{$i} {
-    margin-top: calc(-#{$unit} * #{$i});
-    margin-bottom: calc(-#{$unit} * #{$i});
+    margin-top: calc(-#{$unit} * #{$i}) !important;
+    margin-bottom: calc(-#{$unit} * #{$i}) !important;
   }
 
   .ml-n#{$i} {
-    margin-left: calc(-#{$unit} * #{$i});
+    margin-left: calc(-#{$unit} * #{$i}) !important;
   }
 
   .mr-n#{$i} {
-    margin-right: calc(-#{$unit} * #{$i});
+    margin-right: calc(-#{$unit} * #{$i}) !important;
   }
 
   .mt-n#{$i} {
-    margin-top: calc(-#{$unit} * #{$i});
+    margin-top: calc(-#{$unit} * #{$i}) !important;
   }
 
   .mb-n#{$i} {
-    margin-bottom: calc(-#{$unit} * #{$i});
+    margin-bottom: calc(-#{$unit} * #{$i}) !important;
   }
 
   // padding
   .p-#{$i} {
-    padding: calc(#{$unit} * #{$i});
+    padding: calc(#{$unit} * #{$i}) !important;
   }
 
   .px-#{$i} {
-    padding-left: calc(#{$unit} * #{$i});
-    padding-right: calc(#{$unit} * #{$i});
+    padding-left: calc(#{$unit} * #{$i}) !important;
+    padding-right: calc(#{$unit} * #{$i}) !important;
   }
 
   .py-#{$i} {
-    padding-top: calc(#{$unit} * #{$i});
-    padding-bottom: calc(#{$unit} * #{$i});
+    padding-top: calc(#{$unit} * #{$i}) !important;
+    padding-bottom: calc(#{$unit} * #{$i}) !important;
   }
 
   .pl-#{$i} {
-    padding-left: calc(#{$unit} * #{$i});
+    padding-left: calc(#{$unit} * #{$i}) !important;
   }
 
   .pr-#{$i} {
-    padding-right: calc(#{$unit} * #{$i});
+    padding-right: calc(#{$unit} * #{$i}) !important;
   }
 
   .pt-#{$i} {
-    padding-top: calc(#{$unit} * #{$i});
+    padding-top: calc(#{$unit} * #{$i}) !important;
   }
 
   .pb-#{$i} {
-    padding-bottom: calc(#{$unit} * #{$i});
+    padding-bottom: calc(#{$unit} * #{$i}) !important;
   }
 }

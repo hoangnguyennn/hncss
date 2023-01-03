@@ -63,13 +63,14 @@ $breakpoints: (
   'xl': $xl,
 );
 
-// text
+// base
 $primary-text-color: $dark;
 $primary-font-family: sans-serif;
 $primary-font-size: 1rem;
 $title-font-size: 1.25rem;
 $border-radius: 0.25rem;
 $border-radius-large: 0.5rem;
+$border-color: $light;
 
 // spacing
 $unit: 0.25rem;
@@ -115,7 +116,7 @@ $btn-variants: (
 
 // card
 $card-padding: 1.25rem;
-$card-border-color: $light;
+$card-border-color: $border-color;
 $card-border-radius: $border-radius-large;
 $card-title-font-size: $title-font-size;
 
@@ -134,6 +135,14 @@ $tag-variants: (
   'danger': $red,
   'disabled': $gray,
 );
+
+$table-border-color: $border-color;
+$table-head-background: rgba($light, 0.3);
+$table-cell-background: $white;
+$table-cell-padding-x: 1rem;
+$table-cell-padding-y: 1rem;
+$table-striped-background: rgba($light, 0.3);
+$table-hover-background: $table-striped-background;
 
 // display, add more values later
 $displays: (
