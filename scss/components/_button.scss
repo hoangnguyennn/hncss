@@ -16,6 +16,10 @@
       @if $color == 'disabled' {
         outline: none;
         cursor: not-allowed;
+
+        &:hover {
+          background-color: $value;
+        }
       } @else {
         &:focus {
           outline: 4px solid rgba($value, 0.5);

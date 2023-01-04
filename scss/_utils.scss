@@ -33,3 +33,11 @@
     display: $value !important;
   }
 }
+
+@each $property, $propertyData in $properties {
+  @each $key, $value in $propertyData {
+    .#{$property}-#{$key} {
+      #{$property}: $value;
+    }
+  }
+}

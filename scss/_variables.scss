@@ -144,6 +144,14 @@ $table-cell-padding-y: 1rem;
 $table-striped-background: rgba($light, 0.3);
 $table-hover-background: $table-striped-background;
 
+// tooltip
+$tooltip-padding: 0.5rem;
+$tooltip-background: $dark;
+$tooltip-text-color: $light;
+$tooltip-border-radius: $border-radius;
+$tooltip-caret-spacing: 0.5rem;
+$tooltip-caret-border-width: $tooltip-caret-spacing;
+
 // display, add more values later
 $displays: (
   'block': block,
@@ -151,4 +159,58 @@ $displays: (
   'inline-block': inline-block,
   'flex': flex,
   'inline-flex': inline-flex,
+);
+
+$properties: (
+  'align-content': (
+    center: center,
+    start: flex-start,
+    end: flex-end,
+    normal: normal,
+    baseline: baseline,
+  ),
+  'align-items': (
+    center: center,
+    start: flex-start,
+    end: flex-end,
+    normal: normal,
+    baseline: baseline,
+  ),
+  'align-self': (
+    center: center,
+    start: flex-start,
+    end: flex-end,
+    normal: normal,
+    baseline: baseline,
+  ),
+  'justify-content': (
+    center: center,
+    start: flex-start,
+    end: flex-end,
+    normal: normal,
+    baseline: baseline,
+    between: space-between,
+    around: space-around,
+    evenly: space-evenly,
+  ),
+  'justify-items': (
+    center: center,
+    start: flex-start,
+    end: flex-end,
+    normal: normal,
+    baseline: baseline,
+    between: space-between,
+    around: space-around,
+    evenly: space-evenly,
+  ),
+  'justify-self': (
+    center: center,
+    start: flex-start,
+    end: flex-end,
+    normal: normal,
+    baseline: baseline,
+    between: space-between,
+    around: space-around,
+    evenly: space-evenly,
+  ),
 );

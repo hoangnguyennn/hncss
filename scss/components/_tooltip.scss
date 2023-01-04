@@ -1,0 +1,222 @@
+.tooltip {
+  position: relative;
+  display: inline-block;
+
+  .tooltip-content {
+    display: none;
+    padding: $tooltip-padding;
+    width: auto;
+    background-color: $tooltip-background;
+    color: $tooltip-text-color;
+    border-radius: $tooltip-border-radius;
+    z-index: 1;
+
+    position: absolute;
+  }
+
+  &:hover {
+    .tooltip-content {
+      display: inline-block;
+    }
+  }
+
+  &.tooltip-top-left {
+    .tooltip-content {
+      bottom: calc(100% + #{$tooltip-caret-spacing});
+      left: 0;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: $tooltip-caret-spacing;
+        border: $tooltip-caret-border-width solid transparent;
+        border-top-color: $tooltip-background;
+      }
+    }
+  }
+
+  &.tooltip-top {
+    .tooltip-content {
+      bottom: calc(100% + #{$tooltip-caret-spacing});
+      left: 50%;
+      transform: translateX(-50%);
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border: $tooltip-caret-border-width solid transparent;
+        border-top-color: $tooltip-background;
+      }
+    }
+  }
+
+  &.tooltip-top-right {
+    .tooltip-content {
+      bottom: calc(100% + #{$tooltip-caret-spacing});
+      right: 0;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        right: $tooltip-caret-spacing;
+        border: $tooltip-caret-border-width solid transparent;
+        border-top-color: $tooltip-background;
+      }
+    }
+  }
+
+  &.tooltip-bottom-left {
+    .tooltip-content {
+      top: calc(100% + #{$tooltip-caret-spacing});
+      left: 0;
+
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 100%;
+        left: $tooltip-caret-spacing;
+        border: $tooltip-caret-border-width solid transparent;
+        border-bottom-color: $tooltip-background;
+      }
+    }
+  }
+
+  &.tooltip-bottom {
+    .tooltip-content {
+      top: calc(100% + #{$tooltip-caret-spacing});
+      left: 50%;
+      transform: translateX(-50%);
+
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border: $tooltip-caret-border-width solid transparent;
+        border-bottom-color: $tooltip-background;
+      }
+    }
+  }
+
+  &.tooltip-bottom-right {
+    .tooltip-content {
+      top: calc(100% + #{$tooltip-caret-spacing});
+      right: 0;
+
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 100%;
+        right: $tooltip-caret-spacing;
+        border: $tooltip-caret-border-width solid transparent;
+        border-bottom-color: $tooltip-background;
+      }
+    }
+  }
+
+  &.tooltip-left-top {
+    .tooltip-content {
+      top: 0;
+      right: calc(100% + #{$tooltip-caret-spacing});
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 100%;
+        top: $tooltip-caret-spacing;
+        border: $tooltip-caret-border-width solid transparent;
+        border-left-color: $tooltip-background;
+      }
+    }
+  }
+
+  &.tooltip-left {
+    .tooltip-content {
+      top: 50%;
+      right: calc(100% + #{$tooltip-caret-spacing});
+      transform: translateY(-50%);
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        border: $tooltip-caret-border-width solid transparent;
+        border-left-color: $tooltip-background;
+      }
+    }
+  }
+
+  &.tooltip-left-bottom {
+    .tooltip-content {
+      bottom: 0;
+      right: calc(100% + #{$tooltip-caret-spacing});
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 100%;
+        bottom: $tooltip-caret-spacing;
+        border: $tooltip-caret-border-width solid transparent;
+        border-left-color: $tooltip-background;
+      }
+    }
+  }
+
+  &.tooltip-right-top {
+    .tooltip-content {
+      top: 0;
+      left: calc(100% + #{$tooltip-caret-spacing});
+
+      &:before {
+        content: '';
+        position: absolute;
+        right: 100%;
+        top: $tooltip-caret-spacing;
+        border: $tooltip-caret-border-width solid transparent;
+        border-right-color: $tooltip-background;
+      }
+    }
+  }
+
+  &.tooltip-right {
+    .tooltip-content {
+      top: 50%;
+      left: calc(100% + #{$tooltip-caret-spacing});
+      transform: translateY(-50%);
+
+      &:before {
+        content: '';
+        position: absolute;
+        right: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        border: $tooltip-caret-border-width solid transparent;
+        border-right-color: $tooltip-background;
+      }
+    }
+  }
+
+  &.tooltip-right-bottom {
+    .tooltip-content {
+      bottom: 0;
+      left: calc(100% + #{$tooltip-caret-spacing});
+
+      &:before {
+        content: '';
+        position: absolute;
+        right: 100%;
+        bottom: $tooltip-caret-spacing;
+        border: $tooltip-caret-border-width solid transparent;
+        border-right-color: $tooltip-background;
+      }
+    }
+  }
+}
