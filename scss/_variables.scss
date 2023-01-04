@@ -71,6 +71,9 @@ $title-font-size: 1.25rem;
 $border-radius: 0.25rem;
 $border-radius-large: 0.5rem;
 $border-color: $light;
+$cursor-default: default;
+$cursor-disabled: not-allowed;
+$cursor-pointer: pointer;
 
 // spacing
 $unit: 0.25rem;
@@ -119,6 +122,23 @@ $card-padding: 1.25rem;
 $card-border-color: $border-color;
 $card-border-radius: $border-radius-large;
 $card-title-font-size: $title-font-size;
+
+// pagination
+$pagination-item-min-width: 2rem;
+$pagination-item-height: 2rem;
+$pagination-item-padding-x: 0.375rem;
+$pagination-item-padding-y: 0;
+$pagination-item-line-height: $pagination-item-height;
+$pagination-item-color: $dark;
+$pagination-item-color-active: $primary;
+$pagination-item-border-color-active: $pagination-item-color-active;
+$pagination-item-background-disabled: $light;
+$pagination-item-background-hover: $light;
+$pagination-item-border-radius: $border-radius;
+
+$pagination-control-min-width: min-content;
+
+$pagination-ellipsis-color: $gray;
 
 // tag
 $tag-padding-x: 0.25rem;
