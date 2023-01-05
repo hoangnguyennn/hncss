@@ -4,8 +4,7 @@
   background-color: $white;
   border: 1px solid $dark;
   border-radius: $btn-border-radius;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border 0.15s ease-in-out;
+  transition: make_transition(color, background-color, border);
 
   @each $color, $value in $btn-variants {
     &.btn-#{$color} {
@@ -26,7 +25,9 @@
         }
 
         &:hover {
+          background-clip: padding-box;
           background-color: rgba($value, 0.75);
+          border-color: rgba($value, 0.75);
         }
       }
 

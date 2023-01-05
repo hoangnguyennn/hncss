@@ -57,7 +57,7 @@
 
   &.table-hover {
     td {
-      transition: background-color 0.3s ease-in-out;
+      transition: make_transition(background-color);
     }
 
     tr:hover {

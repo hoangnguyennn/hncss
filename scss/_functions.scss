@@ -1,0 +1,9 @@
+@function make_transition($properties...) {
+  $values: ();
+
+  @each $property in $properties {
+    $values: append($values, #{$property} 0.15s ease-in-out, 'comma');
+  }
+
+  @return $values;
+}
