@@ -123,6 +123,19 @@ $card-border-color: $border-color;
 $card-border-radius: $border-radius-large;
 $card-title-font-size: $title-font-size;
 
+// dropdown
+$dropdown-menu-top: calc(100% + #{$unit});
+$dropdown-menu-left: 0;
+$dropdown-menu-padding: $unit;
+$dropdown-menu-background: $white;
+$dropdown-menu-border-radius: $border-radius;
+$dropdown-menu-box-shadow: 0 2px 4px $gray;
+$dropdown-menu-before-height: $unit;
+
+$dropdown-menu-item-padding: $unit * 2;
+$dropdown-menu-item-border-radius: $dropdown-menu-border-radius;
+$dropdown-menu-item-background: $light;
+
 // pagination
 $pagination-item-min-width: 2rem;
 $pagination-item-height: 2rem;
