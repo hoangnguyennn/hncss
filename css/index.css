@@ -2349,3 +2349,22 @@ button {
   border: 0.5rem solid transparent;
   border-right-color: #292929;
 }
+
+.card-2 .card-thumb {
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-2 .card-thumb .card-cta {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.card-2 .card-thumb:hover .card-cta {
+  background-color: rgba(0, 0, 0, 0.4);
+}
